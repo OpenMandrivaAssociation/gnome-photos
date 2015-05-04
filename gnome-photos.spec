@@ -7,8 +7,8 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.14.2
-Release:	%mkrel 1
+Version:	3.16.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -43,14 +43,14 @@ Access, organize and share your photos with GNOME 3.
 %apply_patches
 
 %build
-%configure2_5x \
+%configure \
 	--disable-schemas-compile
 %make
 
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help
+%find_lang %{name} --with-gnome
 
 find %{buildroot} -name '*.la' -delete
 
