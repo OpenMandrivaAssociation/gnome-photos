@@ -1,3 +1,4 @@
+%define _disable_rebuild_configure 1
 #define gi_major 3.0
 #define girname %mklibname %{name}-gir %{gi_major}
 
@@ -8,7 +9,7 @@
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
 Version:	3.18.1
-Release:	3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
