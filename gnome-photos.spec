@@ -8,8 +8,8 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.18.2
-Release:	2
+Version:	3.30.1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -30,8 +30,8 @@ BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libexif)
 BuildRequires:	pkgconfig(libgfbgraph-0.2)
 BuildRequires:	pkgconfig(librsvg-2.0)
-BuildRequires:	pkgconfig(tracker-control-1.0)
-BuildRequires:	pkgconfig(tracker-sparql-1.0)
+BuildRequires:	pkgconfig(tracker-control-2.0)
+BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	pkgconfig(libgdata)
 Requires:	librsvg
 Requires:	adwaita-icon-theme
