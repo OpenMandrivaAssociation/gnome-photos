@@ -28,7 +28,6 @@ BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libexif)
-#Temporary disabled
 BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(tracker-control-2.0)
@@ -37,6 +36,7 @@ BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(gexiv2)
 BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:  pkgconfig(libjpeg)
 Requires:	librsvg
 Requires:	adwaita-icon-theme
 
