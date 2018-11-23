@@ -65,6 +65,6 @@ find %{buildroot} -name '*.la' -delete
 %{_bindir}/%{name}
 %{_datadir}/applications/%{busname}.desktop
 %{_iconsdir}/*/*/*/*.*
-%{_datadir}/appdata/%{busname}.appdata.xml
+%{_datadir}/metainfo/%{busname}.appdata.xml
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
