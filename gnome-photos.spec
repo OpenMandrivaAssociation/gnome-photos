@@ -60,7 +60,7 @@ Access, organize and share your photos with GNOME 3.
 find %{buildroot} -name '*.la' -delete
 
 %files -f %{name}.lang
-%doc AUTHORS NEWS README
+%doc AUTHORS NEWS README ARTISTS COPYING
 %{_datadir}/glib-2.0/schemas/org.gnome.photos.gschema.xml
 %{_bindir}/%{name}
 %{_datadir}/applications/%{busname}.desktop
@@ -68,3 +68,4 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/metainfo/%{busname}.appdata.xml
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
+%{_libexecdir}/gnome-photos-thumbnailer
