@@ -8,7 +8,7 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.30.1
+Version:	3.32.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -17,6 +17,7 @@ URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	meson
 BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(babl)
 BuildRequires:	pkgconfig(cairo)
@@ -48,12 +49,11 @@ Access, organize and share your photos with GNOME 3.
 %apply_patches
 
 %build
-%configure \
-	--disable-schemas-compile
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
@@ -69,3 +69,4 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
 %{_libexecdir}/gnome-photos-thumbnailer
+%{_libdir}/gnome-photos/libgnome-photos.so
