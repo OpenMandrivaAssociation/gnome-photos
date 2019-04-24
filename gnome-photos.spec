@@ -69,3 +69,4 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
 %{_libexecdir}/gnome-photos-thumbnailer
+%{_libdir}/gnome-photos/libgnome-photos.so
