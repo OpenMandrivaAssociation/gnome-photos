@@ -17,6 +17,7 @@ URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	meson
 BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(babl)
 BuildRequires:	pkgconfig(cairo)
@@ -48,12 +49,11 @@ Access, organize and share your photos with GNOME 3.
 %apply_patches
 
 %build
-%configure \
-	--disable-schemas-compile
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
