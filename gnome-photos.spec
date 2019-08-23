@@ -8,7 +8,7 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.32.0
+Version:	3.32.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
