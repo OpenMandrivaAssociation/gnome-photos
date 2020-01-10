@@ -46,7 +46,7 @@ Access, organize and share your photos with GNOME 3.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %meson
