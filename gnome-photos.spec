@@ -8,12 +8,12 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.37.91
+Version:	3.38.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch0:   https://gitlab.gnome.org/GNOME/gnome-photos/-/merge_requests/135.patch
+#Patch0:   https://gitlab.gnome.org/GNOME/gnome-photos/-/merge_requests/135.patch
 URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
