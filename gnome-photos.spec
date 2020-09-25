@@ -8,11 +8,15 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	3.34.2
+Version:	3.38.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch1:         0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
+Patch2:         0002-Generate-queries-using-SPARQL-templates.patch
+Patch3:         0003-Port-to-Tracker-3.patch
+
 URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
@@ -31,8 +35,7 @@ BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libexif)
 BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
 BuildRequires:	pkgconfig(librsvg-2.0)
-BuildRequires:	pkgconfig(tracker-control-2.0)
-BuildRequires:	pkgconfig(tracker-sparql-2.0)
+BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(gexiv2)
@@ -68,5 +71,10 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/metainfo/%{busname}.appdata.xml
 %{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
+%{_datadir}/dbus-1/services/org.gnome.Photos.Tracker*
+%{_datadir}/tracker/domain-ontologies/org.gnome.Photos.rule
+%{_datadir}/tracker/miners/org.gnome.Photos.Tracker1.Miner.Extract.service
+%{_datadir}/tracker/miners/org.gnome.Photos.Tracker1.Miner.Files.service
+%{_datadir}/tracker3/domain-ontologies/org.gnome.Photos.domain.rule
 %{_libexecdir}/gnome-photos-thumbnailer
 %{_libdir}/gnome-photos/libgnome-photos.so
