@@ -35,7 +35,7 @@ BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(libgdata)
-BuildRequires:  pkgcinfig(libhandy-1)
+BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(gexiv2)
 BuildRequires:	pkgconfig(geocode-glib-1.0)
