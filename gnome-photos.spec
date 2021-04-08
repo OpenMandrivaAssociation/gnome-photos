@@ -14,8 +14,6 @@ License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch1:         0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
-#Patch2:         0002-Generate-queries-using-SPARQL-templates.patch
-#Patch3:         0003-Port-to-Tracker-3.patch
 
 URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
@@ -37,6 +35,7 @@ BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(libgdata)
+BuildRequires:  pkgcinfig(libhandy-1)
 BuildRequires:	pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(gexiv2)
 BuildRequires:	pkgconfig(geocode-glib-1.0)
