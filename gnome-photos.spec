@@ -14,8 +14,8 @@ License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch1:         0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
-Patch2:         0002-Generate-queries-using-SPARQL-templates.patch
-Patch3:         0003-Port-to-Tracker-3.patch
+#Patch2:         0002-Generate-queries-using-SPARQL-templates.patch
+#Patch3:         0003-Port-to-Tracker-3.patch
 
 URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
