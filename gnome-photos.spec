@@ -70,7 +70,7 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/metainfo/%{busname}.appdata.xml
 #{_datadir}/dbus-1/services/%{busname}.service
 %{_datadir}/gnome-shell/search-providers/%{busname}.search-provider.ini
-%{_datadir}/dbus-1/services/org.gnome.Photos.Tracker*
+#{_datadir}/dbus-1/services/org.gnome.Photos.Tracker*
 #{_datadir}/tracker/domain-ontologies/org.gnome.Photos.rule
 #{_datadir}/tracker/miners/org.gnome.Photos.Tracker1.Miner.Extract.service
 #{_datadir}/tracker/miners/org.gnome.Photos.Tracker1.Miner.Files.service
