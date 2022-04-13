@@ -8,8 +8,8 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	40.0
-Release:	2
+Version:	42.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
