@@ -8,7 +8,7 @@
 
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
-Version:	42.0
+Version:	43.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -27,18 +27,21 @@ BuildRequires:	pkgconfig(cairo-gobject)
 BuildRequires:	pkgconfig(exempi-2.0)
 BuildRequires:	pkgconfig(gegl-0.4)
 BuildRequires:	pkgconfig(gio-2.0)
+BuildRequires:  pkgconfig(goa-1.0)
 BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libexif)
-BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
+#BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
+BuildRequires:  pkgconfig(libportal)
+BuildRequires:  pkgconfig(libportal-gtk4)
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(libgdata)
 BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(gexiv2)
-BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:	pkgconfig(geocode-glib-2.0)
 BuildRequires:  pkgconfig(libjpeg)
 Requires:	librsvg
 Requires:	adwaita-icon-theme
