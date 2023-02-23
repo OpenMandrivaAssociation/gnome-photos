@@ -1,0 +1,25 @@
+From 18914effae95e968f637ba04d403e61dbc535c7e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <libreajans@gmail.com>
+Date: Thu, 8 Dec 2022 22:54:15 +0300
+Subject: [PATCH] build: fix babl not found error
+
+Fix "Run-time dependency babl found: NO (tried pkgconfig and cmake)" error
+---
+ meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meson.build b/meson.build
+index 0a7e8cf0..7fa36f5f 100644
+--- a/meson.build
++++ b/meson.build
+@@ -152,7 +152,7 @@ libgd = subproject(
+ )
+ libgd_dep = libgd.get_variable('libgd_dep')
+ 
+-babl_dep = dependency('babl')
++babl_dep = dependency('babl-0.1')
+ cairo_dep = dependency('cairo', version: '>= 1.14.0')
+ gdk_pixbuf_dep = dependency('gdk-pixbuf-2.0', version: '>= 2.36.8')
+ gegl_dep = dependency('gegl-0.4', version: '>= 0.4.0')
+-- 
+GitLab
