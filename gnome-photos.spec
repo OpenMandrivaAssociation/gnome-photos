@@ -9,11 +9,12 @@
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
 Version:	43.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch1:         0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
+Patch1:   0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
+Patch2:   248.patch
 
 URL:		http://www.gnome.org/
 BuildRequires:	desktop-file-utils
@@ -21,7 +22,7 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	meson
 BuildRequires:	libxml2-utils
-BuildRequires:	pkgconfig(babl)
+BuildRequires:	pkgconfig(babl-0.1) >= 0.1.100
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(cairo-gobject)
 BuildRequires:	pkgconfig(exempi-2.0)
