@@ -9,13 +9,13 @@
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
 Version:	44.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch1:   0001-Fix-build-failure-due-to-undefined-M_PI-constant.patch
 
-URL:		http://www.gnome.org/
+URL:		https://www.gnome.org/
 BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
