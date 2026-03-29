@@ -9,7 +9,7 @@
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
 Version:	44.0
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -20,7 +20,7 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	meson
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:	pkgconfig(babl-0.1) >= 0.1.100
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(cairo-gobject)
