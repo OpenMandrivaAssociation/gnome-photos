@@ -1,7 +1,4 @@
 %define _disable_rebuild_configure 1
-#define gi_major 3.0
-#define girname %mklibname %{name}-gir %{gi_major}
-
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 %define busname org.gnome.Photos
@@ -9,7 +6,7 @@
 Summary:	Access, organize and share your photos
 Name:		gnome-photos
 Version:	44.0
-Release:	11
+Release:	14
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Source0: 	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -32,7 +29,6 @@ BuildRequires:	pkgconfig(gnome-desktop-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(libexif)
-#BuildRequires:	pkgconfig(libgfbgraph-0.2) >= 0.2.3
 BuildRequires:  pkgconfig(libportal)
 BuildRequires:  pkgconfig(libportal-gtk4)
 BuildRequires:	pkgconfig(librsvg-2.0)
@@ -40,7 +36,7 @@ BuildRequires:	pkgconfig(tinysparql-3.0)
 BuildRequires:	pkgconfig(libgdata)
 BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(libdazzle-1.0)
-BuildRequires:	pkgconfig(gexiv2-0.16)
+BuildRequires:	pkgconfig(gexiv2)
 BuildRequires:	pkgconfig(geocode-glib-2.0)
 BuildRequires:  pkgconfig(libjpeg)
 Requires:	librsvg
@@ -50,8 +46,7 @@ Requires:	adwaita-icon-theme
 Access, organize and share your photos with GNOME 3.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %meson
